@@ -31,6 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AnalyseWeatherView));
             this.pnlData = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btnPrint = new System.Windows.Forms.Button();
             this.btnApplyFilters = new System.Windows.Forms.Button();
             this.chbWindspeed = new System.Windows.Forms.CheckBox();
             this.chbHumidity = new System.Windows.Forms.CheckBox();
@@ -49,9 +52,6 @@
             this.chbPretoria = new System.Windows.Forms.CheckBox();
             this.chbJhb = new System.Windows.Forms.CheckBox();
             this.chbCapeTown = new System.Windows.Forms.CheckBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.btnPrint = new System.Windows.Forms.Button();
             this.printPreview = new System.Windows.Forms.PrintPreviewDialog();
             this.printDoc = new System.Drawing.Printing.PrintDocument();
             this.panel1.SuspendLayout();
@@ -96,6 +96,38 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(307, 707);
             this.panel1.TabIndex = 7;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(39, 631);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(221, 34);
+            this.label4.TabIndex = 14;
+            this.label4.Text = "Show a report panel which can be\r\nsaved or printed";
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.Color.Silver;
+            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label3.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(0, 597);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(309, 25);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "Show Weather Reporter";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnPrint
+            // 
+            this.btnPrint.Location = new System.Drawing.Point(63, 676);
+            this.btnPrint.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(160, 25);
+            this.btnPrint.TabIndex = 12;
+            this.btnPrint.Text = "Print";
+            this.btnPrint.UseVisualStyleBackColor = true;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // btnApplyFilters
             // 
@@ -294,38 +326,6 @@
             this.chbCapeTown.TabIndex = 0;
             this.chbCapeTown.Text = "Cape Town";
             this.chbCapeTown.UseVisualStyleBackColor = true;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(39, 631);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(221, 34);
-            this.label4.TabIndex = 14;
-            this.label4.Text = "Show a report panel which can be\r\nsaved or printed";
-            // 
-            // label3
-            // 
-            this.label3.BackColor = System.Drawing.Color.Silver;
-            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label3.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(0, 597);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(309, 25);
-            this.label3.TabIndex = 13;
-            this.label3.Text = "Show Weather Reporter";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnPrint
-            // 
-            this.btnPrint.Location = new System.Drawing.Point(63, 676);
-            this.btnPrint.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(160, 25);
-            this.btnPrint.TabIndex = 12;
-            this.btnPrint.Text = "Print";
-            this.btnPrint.UseVisualStyleBackColor = true;
-            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // printPreview
             // 

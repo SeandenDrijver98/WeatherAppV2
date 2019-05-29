@@ -104,7 +104,7 @@ namespace WeatherAppV2
 
         public static string[] toArray(ForecastModel model)
             {
-                string[] forecastArr = { model.city, model.date + "", model.condition, model.precipitation + "", model.maxTemp + "", model.minTemp + "", model.windspeed + "", model.humidity + "" };
+                string[] forecastArr = { model.city, model.date + "", model.condition, model.precipitation + "", model.max_temp + "", model.min_temp + "", model.windspeed + "", model.humidity + "" };
                 return forecastArr;
             }
 

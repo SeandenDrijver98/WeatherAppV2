@@ -53,8 +53,8 @@ namespace WeatherAppV2
                     date = datepicker.Value.Date,
                     condition = cmbConditions.SelectedItem.ToString(),
                     precipitation = (int)numPrecipitation.Value,
-                    maxTemp = (int)maxTempSelector.Value,
-                    minTemp = (int)minTempSelector.Value,
+                    max_temp = (int)maxTempSelector.Value,
+                    min_temp = (int)minTempSelector.Value,
                     windspeed = (int)numWindSpeed.Value,
                     humidity = (int)numHumidity.Value
                 };
@@ -94,7 +94,7 @@ namespace WeatherAppV2
             forecastModelBindingSource.Clear();
             foreach (var forecast in forecasts)
             {
-                Console.WriteLine("Max temp: " +forecast.maxTemp);
+                Console.WriteLine("Max temp: " +forecast.max_temp);
                 forecastModelBindingSource.Add(forecast);
             }
         }
@@ -138,8 +138,8 @@ namespace WeatherAppV2
                     date = datepicker.Value.Date,
                     condition = cmbConditions.SelectedItem.ToString(),
                     precipitation = (int)numPrecipitation.Value,
-                    maxTemp = (int)maxTempSelector.Value,
-                    minTemp = (int)minTempSelector.Value,
+                    max_temp = (int)maxTempSelector.Value,
+                    min_temp = (int)minTempSelector.Value,
                     windspeed = (int)numWindSpeed.Value,
                     humidity = (int)numHumidity.Value,
                 };
@@ -162,8 +162,8 @@ namespace WeatherAppV2
                     date = datepicker.Value.Date,
                     condition = cmbConditions.SelectedItem.ToString(),
                     precipitation = (int)numPrecipitation.Value,
-                    maxTemp = (int)maxTempSelector.Value,
-                    minTemp = (int)minTempSelector.Value,
+                    max_temp = (int)maxTempSelector.Value,
+                    min_temp = (int)minTempSelector.Value,
                     windspeed = (int)numWindSpeed.Value,
                     humidity = (int)numHumidity.Value
                 };
@@ -183,8 +183,8 @@ namespace WeatherAppV2
                       "Date: " + weather.date + "\n" +
                       "Conditions: " + weather.condition + " \n" +
                       "Precipitation Chance: " + weather.precipitation + "% \n" +
-                      "Max Temp: " + weather.maxTemp + "°C \n" +
-                      "Min Temp: " + weather.minTemp + "°C \n" +
+                      "Max Temp: " + weather.max_temp + "°C \n" +
+                      "Min Temp: " + weather.min_temp + "°C \n" +
                       "Windpeed: " + weather.windspeed + "Knot \n" +
                       "Humidity: " + weather.humidity + "% \n" +
                       "-------------------------");

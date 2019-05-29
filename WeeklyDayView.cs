@@ -17,8 +17,8 @@ namespace WeatherAppV2
             InitializeComponent();
             setCondition(forecast.condition);
             lblDate.Text = forecast.date.ToShortDateString();
-            lblMaxTemp.Text = forecast.maxTemp + "";
-            lblMinTemp.Text = forecast.minTemp + "";
+            lblMaxTemp.Text = forecast.max_temp + "";
+            lblMinTemp.Text = forecast.min_temp + "";
         }
 
         public void setCondition(String condition)

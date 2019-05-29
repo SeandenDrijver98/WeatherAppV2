@@ -41,8 +41,8 @@ namespace WeatherAppV2
                 lblTownName.Text = forecast.city;
                 lblDate.Text = forecast.date.ToShortDateString();
                 lblPrecipitation.Text = forecast.precipitation + "";
-                lblMaxTemp.Text = forecast.maxTemp+"";
-                lblMinTemp.Text = forecast.minTemp+"";
+                lblMaxTemp.Text = forecast.max_temp+"";
+                lblMinTemp.Text = forecast.min_temp+"";
                 lblWindspeed.Text = forecast.windspeed +"";
                 lblHumidity.Text = forecast.humidity+"";
             }

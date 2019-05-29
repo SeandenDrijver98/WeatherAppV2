@@ -57,15 +57,15 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
-            this.forecastModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.min_temp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.max_temp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.precipitation = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.windspeed = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.humidity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.conditionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.precipitation = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.minTemp = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.maxTemp = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.windspeed = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.humidity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.forecastModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.numPrecipitation)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numHumidity)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numWindSpeed)).BeginInit();
@@ -285,7 +285,7 @@
             // 
             // minTempSelector
             // 
-            this.minTempSelector.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.forecastModelBindingSource, "minTemp", true));
+            this.minTempSelector.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.forecastModelBindingSource, "min_temp", true));
             this.minTempSelector.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.minTempSelector.Location = new System.Drawing.Point(218, 360);
             this.minTempSelector.Margin = new System.Windows.Forms.Padding(3, 12, 3, 2);
@@ -295,7 +295,7 @@
             // 
             // maxTempSelector
             // 
-            this.maxTempSelector.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.forecastModelBindingSource, "maxTemp", true));
+            this.maxTempSelector.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.forecastModelBindingSource, "max_temp", true));
             this.maxTempSelector.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maxTempSelector.Location = new System.Drawing.Point(218, 410);
             this.maxTempSelector.Margin = new System.Windows.Forms.Padding(3, 12, 3, 2);
@@ -345,9 +345,9 @@
             this.cityDataGridViewTextBoxColumn,
             this.dateDataGridViewTextBoxColumn,
             this.conditionDataGridViewTextBoxColumn,
+            this.min_temp,
+            this.max_temp,
             this.precipitation,
-            this.minTemp,
-            this.maxTemp,
             this.windspeed,
             this.humidity});
             this.gridForecasts.DataSource = this.forecastModelBindingSource;
@@ -420,9 +420,35 @@
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // forecastModelBindingSource
+            // min_temp
             // 
-            this.forecastModelBindingSource.DataSource = typeof(WeatherAppV2.ForecastModel);
+            this.min_temp.DataPropertyName = "min_temp";
+            this.min_temp.HeaderText = "min Temp";
+            this.min_temp.Name = "min_temp";
+            // 
+            // max_temp
+            // 
+            this.max_temp.DataPropertyName = "max_temp";
+            this.max_temp.HeaderText = "max Temp";
+            this.max_temp.Name = "max_temp";
+            // 
+            // precipitation
+            // 
+            this.precipitation.DataPropertyName = "precipitation";
+            this.precipitation.HeaderText = "precipitation";
+            this.precipitation.Name = "precipitation";
+            // 
+            // windspeed
+            // 
+            this.windspeed.DataPropertyName = "windspeed";
+            this.windspeed.HeaderText = "windspeed";
+            this.windspeed.Name = "windspeed";
+            // 
+            // humidity
+            // 
+            this.humidity.DataPropertyName = "humidity";
+            this.humidity.HeaderText = "humidity";
+            this.humidity.Name = "humidity";
             // 
             // cityDataGridViewTextBoxColumn
             // 
@@ -442,35 +468,9 @@
             this.conditionDataGridViewTextBoxColumn.HeaderText = "condition";
             this.conditionDataGridViewTextBoxColumn.Name = "conditionDataGridViewTextBoxColumn";
             // 
-            // precipitation
+            // forecastModelBindingSource
             // 
-            this.precipitation.DataPropertyName = "precipitation";
-            this.precipitation.HeaderText = "precipitation";
-            this.precipitation.Name = "precipitation";
-            // 
-            // minTemp
-            // 
-            this.minTemp.DataPropertyName = "minTemp";
-            this.minTemp.HeaderText = "minTemp";
-            this.minTemp.Name = "minTemp";
-            // 
-            // maxTemp
-            // 
-            this.maxTemp.DataPropertyName = "maxTemp";
-            this.maxTemp.HeaderText = "maxTemp";
-            this.maxTemp.Name = "maxTemp";
-            // 
-            // windspeed
-            // 
-            this.windspeed.DataPropertyName = "windspeed";
-            this.windspeed.HeaderText = "windspeed";
-            this.windspeed.Name = "windspeed";
-            // 
-            // humidity
-            // 
-            this.humidity.DataPropertyName = "humidity";
-            this.humidity.HeaderText = "humidity";
-            this.humidity.Name = "humidity";
+            this.forecastModelBindingSource.DataSource = typeof(WeatherAppV2.ForecastModel);
             // 
             // CaptureView
             // 
@@ -554,9 +554,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn cityDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dateDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn conditionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn min_temp;
+        private System.Windows.Forms.DataGridViewTextBoxColumn max_temp;
         private System.Windows.Forms.DataGridViewTextBoxColumn precipitation;
-        private System.Windows.Forms.DataGridViewTextBoxColumn minTemp;
-        private System.Windows.Forms.DataGridViewTextBoxColumn maxTemp;
         private System.Windows.Forms.DataGridViewTextBoxColumn windspeed;
         private System.Windows.Forms.DataGridViewTextBoxColumn humidity;
     }

@@ -178,8 +178,8 @@ namespace WeatherAppV2
                 obj.date+"",
                 obj.condition,
                 obj.precipitation+"",
-                obj.maxTemp+"",
-                obj.minTemp+"",
+                obj.max_temp+"",
+                obj.min_temp+"",
                 obj.windspeed+"",
                 obj.humidity+""
             };
@@ -229,9 +229,9 @@ namespace WeatherAppV2
                                     int maxValue = 100;
                                     foreach (var forecast in dailyForecasts)
                                     {
-                                        if (forecast.maxTemp <= maxValue)
+                                        if (forecast.max_temp <= maxValue)
                                         {
-                                            maxValue = forecast.maxTemp;
+                                            maxValue = forecast.max_temp;
                                         }
                                     }
                                     MapForecastToTable(dailyForecasts, 4, maxValue);
@@ -240,9 +240,9 @@ namespace WeatherAppV2
                                     int minValue = 0;
                                     foreach (var forecast in dailyForecasts)
                                     {
-                                        if (forecast.minTemp >= minValue)
+                                        if (forecast.min_temp >= minValue)
                                         {
-                                            minValue = forecast.minTemp;
+                                            minValue = forecast.min_temp;
                                         }
                                     }
                                     MapForecastToTable(dailyForecasts, 5, minValue);
