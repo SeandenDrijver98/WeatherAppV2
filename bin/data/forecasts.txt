@@ -1,0 +1,6 @@
+Cape Town,4/23/2019 12:00:00 AM,Sunny,5,20,5,3,20,
+Johannesburg,4/23/2019 12:00:00 AM,Overcast,5,22,6,7,25
+Cape Town,4/24/2019 12:00:00 AM,Sunny,5,25,4,2,10
+Cape Town,4/25/2019 12:00:00 AM,Sunny,10,24,13,7,50
+Durban,4/24/2019 12:00:00 AM,Sunny,0,0,0,0,0
+Cape Town,4/29/2019 12:00:00 AM,Sunny,0,20,0,0,0

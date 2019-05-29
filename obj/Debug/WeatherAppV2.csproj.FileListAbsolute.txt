@@ -1,0 +1,121 @@
+C:/Users/sddri/Desktop/WeatherAppV2/WeatherAppV2/bin/Debug/WeatherAppV2.exe.config
+C:/Users/sddri/Desktop/WeatherAppV2/WeatherAppV2/bin/Debug/WeatherAppV2.exe
+C:/Users/sddri/Desktop/WeatherAppV2/WeatherAppV2/bin/Debug/WeatherAppV2.pdb
+C:/Users/sddri/Desktop/WeatherAppV2/WeatherAppV2/obj/Debug/WeatherAppV2.frmMain.resources
+C:/Users/sddri/Desktop/WeatherAppV2/WeatherAppV2/obj/Debug/WeatherAppV2.Properties.Resources.resources
+C:/Users/sddri/Desktop/WeatherAppV2/WeatherAppV2/obj/Debug/WeatherAppV2.csproj.GenerateResource.cache
+C:/Users/sddri/Desktop/WeatherAppV2/WeatherAppV2/obj/Debug/WeatherAppV2.csproj.CoreCompileInputs.cache
+C:/Users/sddri/Desktop/WeatherAppV2/WeatherAppV2/obj/Debug/WeatherAppV2.exe
+C:/Users/sddri/Desktop/WeatherAppV2/WeatherAppV2/obj/Debug/WeatherAppV2.pdb
+C:/Users/sddri/Desktop/WeatherAppV2/WeatherAppV2/obj/Debug/WeatherAppV2.frmLogin.resources
+C:/Users/sddri/Desktop/WeatherAppV2/WeatherAppV2/obj/Debug/WeatherAppV2.WeatherView.resources
+C:/Users/sddri/Desktop/WeatherAppV2/WeatherAppV2/obj/Debug/WeatherAppV2.CaptureView.resources
+C:/Users/sddri/Desktop/WeatherAppV2/WeatherAppV2/obj/Debug/WeatherAppV2.csprojAssemblyReference.cache
+C:/Users/sddri/Desktop/WeatherAppV2/WeatherAppV2/obj/Debug/WeatherAppV2.analyseTownGrid.resources
+C:/Users/sddri/Desktop/WeatherAppV2/WeatherAppV2/obj/Debug/WeatherAppV2.AnalyseWeatherView.resources
+C:/Users/sddri/Desktop/WeatherAppV2/WeatherAppV2/obj/Debug/WeatherAppV2.WeeklyDayView.resources
+C:/Users/18001299/OneDrive/Documents/Varsity College/Second Year - 2019/PROG/PROG2A_Task3_SeandenDrijver_18001299/WeatherAppV2/WeatherAppV2/bin/Debug/WeatherWatcherDb.db
+C:/Users/18001299/OneDrive/Documents/Varsity College/Second Year - 2019/PROG/PROG2A_Task3_SeandenDrijver_18001299/WeatherAppV2/WeatherAppV2/bin/Debug/WeatherAppV2.exe.config
+C:/Users/18001299/OneDrive/Documents/Varsity College/Second Year - 2019/PROG/PROG2A_Task3_SeandenDrijver_18001299/WeatherAppV2/WeatherAppV2/bin/Debug/WeatherAppV2.exe
+C:/Users/18001299/OneDrive/Documents/Varsity College/Second Year - 2019/PROG/PROG2A_Task3_SeandenDrijver_18001299/WeatherAppV2/WeatherAppV2/bin/Debug/WeatherAppV2.pdb
+C:/Users/18001299/OneDrive/Documents/Varsity College/Second Year - 2019/PROG/PROG2A_Task3_SeandenDrijver_18001299/WeatherAppV2/WeatherAppV2/bin/Debug/Dapper.dll
+C:/Users/18001299/OneDrive/Documents/Varsity College/Second Year - 2019/PROG/PROG2A_Task3_SeandenDrijver_18001299/WeatherAppV2/WeatherAppV2/bin/Debug/System.Data.SQLite.dll
+C:/Users/18001299/OneDrive/Documents/Varsity College/Second Year - 2019/PROG/PROG2A_Task3_SeandenDrijver_18001299/WeatherAppV2/WeatherAppV2/bin/Debug/Dapper.xml
+C:/Users/18001299/OneDrive/Documents/Varsity College/Second Year - 2019/PROG/PROG2A_Task3_SeandenDrijver_18001299/WeatherAppV2/WeatherAppV2/bin/Debug/System.Data.SQLite.xml
+C:/Users/18001299/OneDrive/Documents/Varsity College/Second Year - 2019/PROG/PROG2A_Task3_SeandenDrijver_18001299/WeatherAppV2/WeatherAppV2/bin/Debug/System.Data.SQLite.dll.config
+C:/Users/18001299/OneDrive/Documents/Varsity College/Second Year - 2019/PROG/PROG2A_Task3_SeandenDrijver_18001299/WeatherAppV2/WeatherAppV2/obj/Debug/WeatherAppV2.csprojAssemblyReference.cache
+C:/Users/18001299/OneDrive/Documents/Varsity College/Second Year - 2019/PROG/PROG2A_Task3_SeandenDrijver_18001299/WeatherAppV2/WeatherAppV2/obj/Debug/WeatherAppV2.analyseTownGrid.resources
+C:/Users/18001299/OneDrive/Documents/Varsity College/Second Year - 2019/PROG/PROG2A_Task3_SeandenDrijver_18001299/WeatherAppV2/WeatherAppV2/obj/Debug/WeatherAppV2.frmLogin.resources
+C:/Users/18001299/OneDrive/Documents/Varsity College/Second Year - 2019/PROG/PROG2A_Task3_SeandenDrijver_18001299/WeatherAppV2/WeatherAppV2/obj/Debug/WeatherAppV2.frmMain.resources
+C:/Users/18001299/OneDrive/Documents/Varsity College/Second Year - 2019/PROG/PROG2A_Task3_SeandenDrijver_18001299/WeatherAppV2/WeatherAppV2/obj/Debug/WeatherAppV2.Properties.Resources.resources
+C:/Users/18001299/OneDrive/Documents/Varsity College/Second Year - 2019/PROG/PROG2A_Task3_SeandenDrijver_18001299/WeatherAppV2/WeatherAppV2/obj/Debug/WeatherAppV2.CaptureView.resources
+C:/Users/18001299/OneDrive/Documents/Varsity College/Second Year - 2019/PROG/PROG2A_Task3_SeandenDrijver_18001299/WeatherAppV2/WeatherAppV2/obj/Debug/WeatherAppV2.AnalyseWeatherView.resources
+C:/Users/18001299/OneDrive/Documents/Varsity College/Second Year - 2019/PROG/PROG2A_Task3_SeandenDrijver_18001299/WeatherAppV2/WeatherAppV2/obj/Debug/WeatherAppV2.WeatherView.resources
+C:/Users/18001299/OneDrive/Documents/Varsity College/Second Year - 2019/PROG/PROG2A_Task3_SeandenDrijver_18001299/WeatherAppV2/WeatherAppV2/obj/Debug/WeatherAppV2.WeeklyDayView.resources
+C:/Users/18001299/OneDrive/Documents/Varsity College/Second Year - 2019/PROG/PROG2A_Task3_SeandenDrijver_18001299/WeatherAppV2/WeatherAppV2/obj/Debug/WeatherAppV2.csproj.GenerateResource.cache
+C:/Users/18001299/OneDrive/Documents/Varsity College/Second Year - 2019/PROG/PROG2A_Task3_SeandenDrijver_18001299/WeatherAppV2/WeatherAppV2/obj/Debug/WeatherAppV2.csproj.CoreCompileInputs.cache
+C:/Users/18001299/OneDrive/Documents/Varsity College/Second Year - 2019/PROG/PROG2A_Task3_SeandenDrijver_18001299/WeatherAppV2/WeatherAppV2/obj/Debug/WeatherAppV2.csproj.CopyComplete
+C:/Users/18001299/OneDrive/Documents/Varsity College/Second Year - 2019/PROG/PROG2A_Task3_SeandenDrijver_18001299/WeatherAppV2/WeatherAppV2/obj/Debug/WeatherAppV2.exe
+C:/Users/18001299/OneDrive/Documents/Varsity College/Second Year - 2019/PROG/PROG2A_Task3_SeandenDrijver_18001299/WeatherAppV2/WeatherAppV2/obj/Debug/WeatherAppV2.pdb
+C:/Users/18001299/OneDrive/Documents/Varsity College/Second Year - 2019/PROG/PROG2A_Task3_SeandenDrijver_18001299/WeatherAppV2/WeatherAppV2/obj/Debug/WeatherAppV2.AdminForecastView.resources
+C:/Users/18001299/OneDrive/Documents/Varsity College/Second Year - 2019/PROG/PROG2A_Task3_SeandenDrijver_18001299/WeatherAppV2/WeatherAppV2/obj/Debug/WeatherAppV2.Administrator.resources
+/Users/sean/Documents/OneDrive/Documents/Varsity College/Second Year - 2019/PROG/PROG2A_Task3_SeandenDrijver_18001299/WeatherAppV2/WeatherAppV2/obj/Debug/WeatherAppV2.csprojAssemblyReference.cache
+/Users/sean/Documents/OneDrive/Documents/Varsity College/Second Year - 2019/PROG/PROG2A_Task3_SeandenDrijver_18001299/WeatherAppV2/WeatherAppV2/obj/Debug/WeatherAppV2.AdminForecastView.resources
+/Users/sean/Documents/OneDrive/Documents/Varsity College/Second Year - 2019/PROG/PROG2A_Task3_SeandenDrijver_18001299/WeatherAppV2/WeatherAppV2/obj/Debug/WeatherAppV2.Administrator.resources
+/Users/sean/Documents/OneDrive/Documents/Varsity College/Second Year - 2019/PROG/PROG2A_Task3_SeandenDrijver_18001299/WeatherAppV2/WeatherAppV2/obj/Debug/WeatherAppV2.analyseTownGrid.resources
+/Users/sean/Documents/OneDrive/Documents/Varsity College/Second Year - 2019/PROG/PROG2A_Task3_SeandenDrijver_18001299/WeatherAppV2/WeatherAppV2/obj/Debug/WeatherAppV2.frmLogin.resources
+/Users/sean/Documents/OneDrive/Documents/Varsity College/Second Year - 2019/PROG/PROG2A_Task3_SeandenDrijver_18001299/WeatherAppV2/WeatherAppV2/obj/Debug/WeatherAppV2.frmMain.resources
+/Users/sean/Documents/OneDrive/Documents/Varsity College/Second Year - 2019/PROG/PROG2A_Task3_SeandenDrijver_18001299/WeatherAppV2/WeatherAppV2/obj/Debug/WeatherAppV2.Properties.Resources.resources
+/Users/sean/Documents/OneDrive/Documents/Varsity College/Second Year - 2019/PROG/PROG2A_Task3_SeandenDrijver_18001299/WeatherAppV2/WeatherAppV2/obj/Debug/WeatherAppV2.CaptureView.resources
+/Users/sean/Documents/OneDrive/Documents/Varsity College/Second Year - 2019/PROG/PROG2A_Task3_SeandenDrijver_18001299/WeatherAppV2/WeatherAppV2/obj/Debug/WeatherAppV2.AnalyseWeatherView.resources
+/Users/sean/Documents/OneDrive/Documents/Varsity College/Second Year - 2019/PROG/PROG2A_Task3_SeandenDrijver_18001299/WeatherAppV2/WeatherAppV2/obj/Debug/WeatherAppV2.WeatherView.resources
+/Users/sean/Documents/OneDrive/Documents/Varsity College/Second Year - 2019/PROG/PROG2A_Task3_SeandenDrijver_18001299/WeatherAppV2/WeatherAppV2/obj/Debug/WeatherAppV2.WeeklyDayView.resources
+/Users/sean/Documents/OneDrive/Documents/Varsity College/Second Year - 2019/PROG/PROG2A_Task3_SeandenDrijver_18001299/WeatherAppV2/WeatherAppV2/obj/Debug/WeatherAppV2.csproj.GenerateResource.cache
+/Users/sean/Documents/OneDrive/Documents/Varsity College/Second Year - 2019/PROG/PROG2A_Task3_SeandenDrijver_18001299/WeatherAppV2/WeatherAppV2/obj/Debug/WeatherAppV2.csproj.CoreCompileInputs.cache
+/Users/sean/Documents/OneDrive/Documents/Varsity College/Second Year - 2019/PROG/PROG2A_Task3_SeandenDrijver_18001299/WeatherAppV2/WeatherAppV2/obj/Debug/WeatherAppV2.exe
+/Users/sean/Documents/OneDrive/Documents/Varsity College/Second Year - 2019/PROG/PROG2A_Task3_SeandenDrijver_18001299/WeatherAppV2/WeatherAppV2/obj/Debug/WeatherAppV2.pdb
+C:\Users\18001299\OneDrive\Documents\Varsity College\Second Year - 2019\PROG\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.csprojAssemblyReference.cache
+C:\Users\18001299\OneDrive\Documents\Varsity College\Second Year - 2019\PROG\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.AdminForecastView.resources
+C:\Users\18001299\OneDrive\Documents\Varsity College\Second Year - 2019\PROG\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.Administrator.resources
+C:\Users\18001299\OneDrive\Documents\Varsity College\Second Year - 2019\PROG\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.analyseTownGrid.resources
+C:\Users\18001299\OneDrive\Documents\Varsity College\Second Year - 2019\PROG\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.frmLogin.resources
+C:\Users\18001299\OneDrive\Documents\Varsity College\Second Year - 2019\PROG\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.frmMain.resources
+C:\Users\18001299\OneDrive\Documents\Varsity College\Second Year - 2019\PROG\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.Properties.Resources.resources
+C:\Users\18001299\OneDrive\Documents\Varsity College\Second Year - 2019\PROG\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.CaptureView.resources
+C:\Users\18001299\OneDrive\Documents\Varsity College\Second Year - 2019\PROG\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.AnalyseWeatherView.resources
+C:\Users\18001299\OneDrive\Documents\Varsity College\Second Year - 2019\PROG\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.WeatherView.resources
+C:\Users\18001299\OneDrive\Documents\Varsity College\Second Year - 2019\PROG\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.WeeklyDayView.resources
+C:\Users\18001299\OneDrive\Documents\Varsity College\Second Year - 2019\PROG\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.csproj.GenerateResource.cache
+C:\Users\18001299\OneDrive\Documents\Varsity College\Second Year - 2019\PROG\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.csproj.CoreCompileInputs.cache
+C:\Users\18001299\OneDrive\Documents\Varsity College\Second Year - 2019\PROG\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.exe
+C:\Users\18001299\OneDrive\Documents\Varsity College\Second Year - 2019\PROG\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.pdb
+C:\Users\sddri\OneDrive\Documents\Varsity College\Second Year - 2019\PROG\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\bin\Debug\WeatherWatcherDb.db
+C:\Users\sddri\OneDrive\Documents\Varsity College\Second Year - 2019\PROG\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\bin\Debug\WeatherAppV2.exe.config
+C:\Users\sddri\OneDrive\Documents\Varsity College\Second Year - 2019\PROG\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\bin\Debug\WeatherAppV2.exe
+C:\Users\sddri\OneDrive\Documents\Varsity College\Second Year - 2019\PROG\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\bin\Debug\WeatherAppV2.pdb
+C:\Users\sddri\OneDrive\Documents\Varsity College\Second Year - 2019\PROG\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\bin\Debug\Dapper.dll
+C:\Users\sddri\OneDrive\Documents\Varsity College\Second Year - 2019\PROG\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\bin\Debug\System.Data.SQLite.dll
+C:\Users\sddri\OneDrive\Documents\Varsity College\Second Year - 2019\PROG\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\bin\Debug\Dapper.xml
+C:\Users\sddri\OneDrive\Documents\Varsity College\Second Year - 2019\PROG\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\bin\Debug\System.Data.SQLite.xml
+C:\Users\sddri\OneDrive\Documents\Varsity College\Second Year - 2019\PROG\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\sddri\OneDrive\Documents\Varsity College\Second Year - 2019\PROG\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.AdminForecastView.resources
+C:\Users\sddri\OneDrive\Documents\Varsity College\Second Year - 2019\PROG\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.Administrator.resources
+C:\Users\sddri\OneDrive\Documents\Varsity College\Second Year - 2019\PROG\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.analyseTownGrid.resources
+C:\Users\sddri\OneDrive\Documents\Varsity College\Second Year - 2019\PROG\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.frmLogin.resources
+C:\Users\sddri\OneDrive\Documents\Varsity College\Second Year - 2019\PROG\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.frmMain.resources
+C:\Users\sddri\OneDrive\Documents\Varsity College\Second Year - 2019\PROG\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.Properties.Resources.resources
+C:\Users\sddri\OneDrive\Documents\Varsity College\Second Year - 2019\PROG\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.CaptureView.resources
+C:\Users\sddri\OneDrive\Documents\Varsity College\Second Year - 2019\PROG\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.AnalyseWeatherView.resources
+C:\Users\sddri\OneDrive\Documents\Varsity College\Second Year - 2019\PROG\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.WeatherView.resources
+C:\Users\sddri\OneDrive\Documents\Varsity College\Second Year - 2019\PROG\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.WeeklyDayView.resources
+C:\Users\sddri\OneDrive\Documents\Varsity College\Second Year - 2019\PROG\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.csproj.GenerateResource.cache
+C:\Users\sddri\OneDrive\Documents\Varsity College\Second Year - 2019\PROG\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.csproj.CoreCompileInputs.cache
+C:\Users\sddri\OneDrive\Documents\Varsity College\Second Year - 2019\PROG\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.csproj.CopyComplete
+C:\Users\sddri\OneDrive\Documents\Varsity College\Second Year - 2019\PROG\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.exe
+C:\Users\sddri\OneDrive\Documents\Varsity College\Second Year - 2019\PROG\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.pdb
+C:\Users\sddri\OneDrive\Documents\Varsity College\Second Year - 2019\PROG\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.csprojAssemblyReference.cache
+C:\Users\sddri\Desktop\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.csprojAssemblyReference.cache
+C:\Users\sddri\Desktop\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.AdminForecastView.resources
+C:\Users\sddri\Desktop\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.Administrator.resources
+C:\Users\sddri\Desktop\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.analyseTownGrid.resources
+C:\Users\sddri\Desktop\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.frmLogin.resources
+C:\Users\sddri\Desktop\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.frmMain.resources
+C:\Users\sddri\Desktop\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.Properties.Resources.resources
+C:\Users\sddri\Desktop\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.CaptureView.resources
+C:\Users\sddri\Desktop\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.AnalyseWeatherView.resources
+C:\Users\sddri\Desktop\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.WeatherView.resources
+C:\Users\sddri\Desktop\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.WeeklyDayView.resources
+C:\Users\sddri\Desktop\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.csproj.GenerateResource.cache
+C:\Users\sddri\Desktop\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.csproj.CoreCompileInputs.cache
+C:\Users\sddri\Desktop\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.exe
+C:\Users\sddri\Desktop\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.pdb
+C:\Users\sddri\Desktop\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\bin\Debug\WeatherWatcherDb.db
+C:\Users\sddri\Desktop\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\bin\Debug\WeatherAppV2.exe.config
+C:\Users\sddri\Desktop\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\bin\Debug\WeatherAppV2.exe
+C:\Users\sddri\Desktop\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\bin\Debug\WeatherAppV2.pdb
+C:\Users\sddri\Desktop\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\bin\Debug\Dapper.dll
+C:\Users\sddri\Desktop\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\bin\Debug\System.Data.SQLite.dll
+C:\Users\sddri\Desktop\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\bin\Debug\Dapper.xml
+C:\Users\sddri\Desktop\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\bin\Debug\System.Data.SQLite.xml
+C:\Users\sddri\Desktop\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\sddri\Desktop\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.csproj.CopyComplete
