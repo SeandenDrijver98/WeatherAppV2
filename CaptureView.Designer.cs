@@ -62,10 +62,11 @@
             this.precipitation = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.windspeed = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.humidity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblForecastID = new System.Windows.Forms.Label();
+            this.forecastModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.conditionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.forecastModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.numPrecipitation)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numHumidity)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numWindSpeed)).BeginInit();
@@ -450,6 +451,20 @@
             this.humidity.HeaderText = "humidity";
             this.humidity.Name = "humidity";
             // 
+            // lblForecastID
+            // 
+            this.lblForecastID.AutoSize = true;
+            this.lblForecastID.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.forecastModelBindingSource, "forecast_id", true));
+            this.lblForecastID.Font = new System.Drawing.Font("Georgia", 1.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblForecastID.Location = new System.Drawing.Point(55, 108);
+            this.lblForecastID.Name = "lblForecastID";
+            this.lblForecastID.Size = new System.Drawing.Size(0, 4);
+            this.lblForecastID.TabIndex = 59;
+            // 
+            // forecastModelBindingSource
+            // 
+            this.forecastModelBindingSource.DataSource = typeof(WeatherAppV2.ForecastModel);
+            // 
             // cityDataGridViewTextBoxColumn
             // 
             this.cityDataGridViewTextBoxColumn.DataPropertyName = "city";
@@ -468,15 +483,12 @@
             this.conditionDataGridViewTextBoxColumn.HeaderText = "condition";
             this.conditionDataGridViewTextBoxColumn.Name = "conditionDataGridViewTextBoxColumn";
             // 
-            // forecastModelBindingSource
-            // 
-            this.forecastModelBindingSource.DataSource = typeof(WeatherAppV2.ForecastModel);
-            // 
             // CaptureView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.Controls.Add(this.lblForecastID);
             this.Controls.Add(this.btnNew);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnEdit);
@@ -508,6 +520,7 @@
             this.Font = new System.Drawing.Font("Georgia", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "CaptureView";
             this.Size = new System.Drawing.Size(1280, 707);
+            this.Load += new System.EventHandler(this.CaptureView_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numPrecipitation)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numHumidity)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numWindSpeed)).EndInit();
@@ -559,5 +572,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn precipitation;
         private System.Windows.Forms.DataGridViewTextBoxColumn windspeed;
         private System.Windows.Forms.DataGridViewTextBoxColumn humidity;
+        private System.Windows.Forms.Label lblForecastID;
     }
 }

@@ -32,69 +32,11 @@ namespace WeatherAppV2
             numPrecipitation.Value = 0;
         }
 
-        private void btnSubmit_Click(object sender, EventArgs e)
-        {
-            //Declare variables
-            string cityName = "";
-            DateTime selectedDate = DateTime.Today;
-            string condition = "";
-            int maxTemp = 0;
-            int minTemp = 0;
-            int windspeed = 0;
-            int humidity = 0;
-            int precipitation = 0;
-            //Get values from interface
-            try
-            {
-
-                ForecastModel weather = new ForecastModel
-                {
-                    city = cmbCitySelector.SelectedItem.ToString(),
-                    date = datepicker.Value.Date,
-                    condition = cmbConditions.SelectedItem.ToString(),
-                    precipitation = (int)numPrecipitation.Value,
-                    max_temp = (int)maxTempSelector.Value,
-                    min_temp = (int)minTempSelector.Value,
-                    windspeed = (int)numWindSpeed.Value,
-                    humidity = (int)numHumidity.Value
-                };
-
-                WeatherDbDataAccess.CreateForecast(weather);
-
-                //Display success to the user
-                MessageBox.Show("Successfully Captured \n" +
-                    "-------------------------\n" +
-                      "City: " + cityName+ "\n" +
-                      "Date: " + selectedDate + "\n" +
-                      "Conditions: " + condition + " \n" +
-                      "Precipitation Chance: " + precipitation + "% \n" +
-                      "Max Temp: " + maxTemp + "°C \n" +
-                      "Min Temp: " + minTemp + "°C \n" +
-                      "Windpeed: " + windspeed + "Knot \n" +
-                      "Humidity: " + humidity + "% \n" +
-                      "-------------------------");
-
-            }
-            catch (NullReferenceException)
-            {
-                MessageBox.Show("An error occured in your submission, Please ensure all fields were filled out");
-            }
-            catch (IndexOutOfRangeException)
-            {
-                MessageBox.Show("Maximum number of a Forecasts reached");
-            }
-            resetFields();
-
-            List<ForecastModel>forecasts = WeatherDbDataAccess.getAllForecasts();
-            mapForecastsToGrid(forecasts);
-        }
-
         public void mapForecastsToGrid(List<ForecastModel> forecasts)
         {
             forecastModelBindingSource.Clear();
             foreach (var forecast in forecasts)
             {
-                Console.WriteLine("Max temp: " +forecast.max_temp);
                 forecastModelBindingSource.Add(forecast);
             }
         }
@@ -134,6 +76,7 @@ namespace WeatherAppV2
             {
                 ForecastModel report = new ForecastModel
                 {
+                    forecast_id = int.Parse(lblForecastID.Text),
                     city = cmbCitySelector.SelectedItem.ToString(),
                     date = datepicker.Value.Date,
                     condition = cmbConditions.SelectedItem.ToString(),
@@ -158,6 +101,7 @@ namespace WeatherAppV2
 
                 ForecastModel weather = new ForecastModel
                 {
+                    forecast_id = int.Parse(lblForecastID.Text),
                     city = cmbCitySelector.SelectedItem.ToString(),
                     date = datepicker.Value.Date,
                     condition = cmbConditions.SelectedItem.ToString(),
@@ -202,6 +146,11 @@ namespace WeatherAppV2
             List<ForecastModel> forecasts = WeatherDbDataAccess.getAllForecasts();
             mapForecastsToGrid(forecasts);
             setFieldsEditable(false);
+
+        }
+
+        private void CaptureView_Load(object sender, EventArgs e)
+        {
 
         }
     }

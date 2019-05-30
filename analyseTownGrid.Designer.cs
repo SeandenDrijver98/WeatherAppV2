@@ -35,9 +35,9 @@
             this.townForecastBinding = new System.Windows.Forms.BindingSource(this.components);
             this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.conditionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.min_temp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.max_temp = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.precipitationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.maxTempDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.minTempDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.windspeedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.humidityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
@@ -78,9 +78,9 @@
             this.gridWeather.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dateDataGridViewTextBoxColumn,
             this.conditionDataGridViewTextBoxColumn,
+            this.min_temp,
+            this.max_temp,
             this.precipitationDataGridViewTextBoxColumn,
-            this.maxTempDataGridViewTextBoxColumn,
-            this.minTempDataGridViewTextBoxColumn,
             this.windspeedDataGridViewTextBoxColumn,
             this.humidityDataGridViewTextBoxColumn});
             this.gridWeather.DataSource = this.townForecastBinding;
@@ -108,23 +108,23 @@
             this.conditionDataGridViewTextBoxColumn.HeaderText = "Condition";
             this.conditionDataGridViewTextBoxColumn.Name = "conditionDataGridViewTextBoxColumn";
             // 
+            // min_temp
+            // 
+            this.min_temp.DataPropertyName = "min_temp";
+            this.min_temp.HeaderText = "min Temp";
+            this.min_temp.Name = "min_temp";
+            // 
+            // max_temp
+            // 
+            this.max_temp.DataPropertyName = "max_temp";
+            this.max_temp.HeaderText = "max Temp";
+            this.max_temp.Name = "max_temp";
+            // 
             // precipitationDataGridViewTextBoxColumn
             // 
             this.precipitationDataGridViewTextBoxColumn.DataPropertyName = "precipitation";
             this.precipitationDataGridViewTextBoxColumn.HeaderText = "Precipitation";
             this.precipitationDataGridViewTextBoxColumn.Name = "precipitationDataGridViewTextBoxColumn";
-            // 
-            // maxTempDataGridViewTextBoxColumn
-            // 
-            this.maxTempDataGridViewTextBoxColumn.DataPropertyName = "maxTemp";
-            this.maxTempDataGridViewTextBoxColumn.HeaderText = "Max Temp";
-            this.maxTempDataGridViewTextBoxColumn.Name = "maxTempDataGridViewTextBoxColumn";
-            // 
-            // minTempDataGridViewTextBoxColumn
-            // 
-            this.minTempDataGridViewTextBoxColumn.DataPropertyName = "minTemp";
-            this.minTempDataGridViewTextBoxColumn.HeaderText = "Min Temp";
-            this.minTempDataGridViewTextBoxColumn.Name = "minTempDataGridViewTextBoxColumn";
             // 
             // windspeedDataGridViewTextBoxColumn
             // 
@@ -160,13 +160,15 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblTown;
         private System.Windows.Forms.DataGridView gridWeather;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dateDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn conditionDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn precipitationDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn maxTempDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn minTempDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource townForecastBinding;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn conditionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn min_temp;
+        private System.Windows.Forms.DataGridViewTextBoxColumn max_temp;
+        private System.Windows.Forms.DataGridViewTextBoxColumn precipitationDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn windspeedDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn humidityDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource townForecastBinding;
     }
 }

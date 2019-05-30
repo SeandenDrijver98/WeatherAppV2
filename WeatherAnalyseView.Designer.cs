@@ -45,7 +45,7 @@
             this.dateSearch = new System.Windows.Forms.MonthCalendar();
             this.label2 = new System.Windows.Forms.Label();
             this.lblCitySelection = new System.Windows.Forms.Label();
-            this.btnCity = new System.Windows.Forms.Button();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.lblSelectCity = new System.Windows.Forms.Label();
             this.chbPE = new System.Windows.Forms.CheckBox();
             this.chbDurban = new System.Windows.Forms.CheckBox();
@@ -84,7 +84,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.lblCitySelection);
-            this.panel1.Controls.Add(this.btnCity);
+            this.panel1.Controls.Add(this.btnSearch);
             this.panel1.Controls.Add(this.lblSelectCity);
             this.panel1.Controls.Add(this.chbPE);
             this.panel1.Controls.Add(this.chbDurban);
@@ -249,16 +249,16 @@
             this.lblCitySelection.Text = "Select Date Range:";
             this.lblCitySelection.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnCity
+            // btnSearch
             // 
-            this.btnCity.Location = new System.Drawing.Point(11, 379);
-            this.btnCity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnCity.Name = "btnCity";
-            this.btnCity.Size = new System.Drawing.Size(117, 25);
-            this.btnCity.TabIndex = 3;
-            this.btnCity.Text = "Search";
-            this.btnCity.UseVisualStyleBackColor = true;
-            this.btnCity.Click += new System.EventHandler(this.btnCity_Click);
+            this.btnSearch.Location = new System.Drawing.Point(11, 379);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(117, 25);
+            this.btnSearch.TabIndex = 3;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnCity_Click);
             // 
             // lblSelectCity
             // 
@@ -346,7 +346,7 @@
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AnalyseWeatherView";
-            this.Size = new System.Drawing.Size(1280, 706);
+            this.Size = new System.Drawing.Size(1280, 707);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -370,7 +370,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.MonthCalendar dateSearch;
         private System.Windows.Forms.Label lblCitySelection;
-        private System.Windows.Forms.Button btnCity;
+        private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Label lblSelectCity;
         private System.Windows.Forms.CheckBox chbPE;
         private System.Windows.Forms.CheckBox chbDurban;

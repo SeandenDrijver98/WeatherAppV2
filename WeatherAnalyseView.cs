@@ -30,11 +30,14 @@ namespace WeatherAppV2
         private void btnCity_Click(object sender, EventArgs e)
         {
             searchRange = dateSearch.SelectionRange;
+
             ForecastModel searchForecast = new ForecastModel
             {
                 date = searchRange.Start,
                 endDate = searchRange.End
             };
+
+            
 
 
             List<String> Cities = populateSelectedCities();
@@ -294,6 +297,8 @@ namespace WeatherAppV2
             {
                 Console.WriteLine("Analysis Encountered an error");
             }
+
+           
 
         }
              

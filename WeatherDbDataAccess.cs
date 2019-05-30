@@ -53,7 +53,7 @@ namespace WeatherAppV2
             using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
             {
                 connection.Execute("INSERT INTO Forecast (city, date, condition, precipitation, max_temp, min_temp, windspeed, humidity) " +
-                    "Values (@city, @date, @condition, @precipitation, @maxTemp, @minTemp, @windspeed, @humidity)", forecast);
+                    "Values (@city, @date, @condition, @precipitation, @max_temp, @min_temp, @windspeed, @humidity)", forecast);
             }
 
         }
@@ -112,7 +112,7 @@ namespace WeatherAppV2
         {
             using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
             {
-                connection.Query<ForecastModel>("DELETE FROM Forecast WHERE date IS @date AND city is @city AND condition is @condition", forecast);
+                connection.Query<ForecastModel>("DELETE FROM Forecast WHERE forecast_id IS @forecast_id", forecast);
             }
         }
 
@@ -120,10 +120,8 @@ namespace WeatherAppV2
         {
             using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
             {
-                connection.Query<ForecastModel>("UPDATE Forecast " +
-                    "SET city = @city, date = @date, condition = @condition, precipitation = @precipitation, max_temp = @maxTemp, min_temp = @minTemp, windspeed = @windspeed, humidity = @humidity " +
-                    //"Values (@city, @date, @condition, @precipitation, @maxTemp, @minTemp, @windspeed, @humidity) " +
-                    "WHERE date IS @date AND city is @city AND condition is @condition", forecast);
+                connection.Execute("UPDATE Forecast SET (city, date, condition, precipitation, max_temp, min_temp, windspeed, humidity) = (@city, @date, @condition, @precipitation, @max_temp, @min_temp, @windspeed, @humidity) WHERE forecast_id IS @forecast_id", forecast);
+
             }
         }
 

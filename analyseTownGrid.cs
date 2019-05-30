@@ -16,6 +16,7 @@ namespace WeatherAppV2//WeatherForecaster_SeanDenDrijver.Pages
         public analyseTownGrid(String Town)
         {
             InitializeComponent();
+            townForecastBinding.Clear();
             lblTown.Text = Town;           
        
         }
@@ -68,18 +69,7 @@ namespace WeatherAppV2//WeatherForecaster_SeanDenDrijver.Pages
         // Clear all records
         public void clearRecords()
         {
-            for (int row = 0; row < gridWeather.RowCount; row++)
-            {
-                gridWeather.Rows[currentRow].Cells[0].Value = "";
-                gridWeather.Rows[currentRow].Cells[1].Value = "";
-                gridWeather.Rows[currentRow].Cells[2].Value = "";
-                gridWeather.Rows[currentRow].Cells[3].Value = "";
-                gridWeather.Rows[currentRow].Cells[4].Value = "";
-                gridWeather.Rows[currentRow].Cells[5].Value = "";
-                gridWeather.Rows[currentRow].Cells[6].Value = "";
-                currentRow = 0;
-
-            }
+            townForecastBinding.Clear();
 
         }
 

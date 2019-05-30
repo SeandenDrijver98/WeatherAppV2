@@ -8,6 +8,7 @@ namespace WeatherAppV2
 {
     public class ForecastModel
     {
+        public int forecast_id { get; set; }
         public DateTime date { get; set; }
         public string city { get; set; }
         public string condition { get; set; }
