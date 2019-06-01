@@ -42,7 +42,7 @@ namespace WeatherAppV2
         {
             using (IDbConnection connection = new SQLiteConnection(LoadConnectionString()))
             {
-                connection.Execute("INSERT INTO User (email, password, permissions) Values (@email, @password, @permissions)", user);
+                connection.Execute("INSERT INTO User (email, password, permissions,favourite_city) Values (@email, @password, @permissions, @favCity)", user);
             }
 
         }

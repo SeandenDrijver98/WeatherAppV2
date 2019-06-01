@@ -38,8 +38,9 @@ namespace WeatherAppV2
             UserModel user = new UserModel {
                 email = txtSignUpEmail.Text,
                 password = txtSignupPassword.Text,
-                permissions = access
-        };
+                permissions = access,
+                favCity = cmbCity.Text
+            };
             //Function Which adds the user model to database
             WeatherDbDataAccess.CreateUser(user);
 

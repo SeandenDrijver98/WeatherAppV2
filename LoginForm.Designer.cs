@@ -53,6 +53,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.EmailError = new System.Windows.Forms.ErrorProvider(this.components);
             this.PasswordError = new System.Windows.Forms.ErrorProvider(this.components);
+            this.cmbCity = new System.Windows.Forms.ComboBox();
             this.pnlSignUp.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -67,6 +68,7 @@
             // 
             this.pnlSignUp.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.pnlSignUp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlSignUp.Controls.Add(this.cmbCity);
             this.pnlSignUp.Controls.Add(this.pictureBox2);
             this.pnlSignUp.Controls.Add(this.btnSubmit);
             this.pnlSignUp.Controls.Add(this.groupBox1);
@@ -93,7 +95,7 @@
             // 
             // btnSubmit
             // 
-            this.btnSubmit.Location = new System.Drawing.Point(235, 503);
+            this.btnSubmit.Location = new System.Drawing.Point(230, 540);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(150, 40);
             this.btnSubmit.TabIndex = 3;
@@ -295,6 +297,24 @@
             // 
             this.PasswordError.ContainerControl = this;
             // 
+            // cmbCity
+            // 
+            this.cmbCity.BackColor = System.Drawing.Color.White;
+            this.cmbCity.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbCity.FormattingEnabled = true;
+            this.cmbCity.Items.AddRange(new object[] {
+            "Cape Town",
+            "Johannesburg",
+            "Durban",
+            "Stellenbosch",
+            "Pretoria"});
+            this.cmbCity.Location = new System.Drawing.Point(175, 495);
+            this.cmbCity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbCity.Name = "cmbCity";
+            this.cmbCity.Size = new System.Drawing.Size(292, 32);
+            this.cmbCity.TabIndex = 8;
+            this.cmbCity.Text = "Favourite City";
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
@@ -350,5 +370,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ErrorProvider PasswordError;
         public System.Windows.Forms.TextBox txtLoginPassword;
+        private System.Windows.Forms.ComboBox cmbCity;
     }
 }

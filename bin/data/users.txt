@@ -1,7 +1,0 @@
-Sean,123,General
-Sean@gmail.com,123,Admin
-sean@gmail.com,pwSean#1,Admin
-admin@gmail.com,admin,Admin
-sean@gmail.com,sean,General
-james@sucks.com,james,Admin
-sean@boss.com,sean,General

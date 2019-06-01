@@ -11,5 +11,6 @@ namespace WeatherAppV2
         public String email { get; set; }
         public String password { get; set; }
         public String permissions { get; set; }
+        public String favCity { get; set; }
     }
 }

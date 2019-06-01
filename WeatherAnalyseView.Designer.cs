@@ -31,6 +31,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AnalyseWeatherView));
             this.pnlData = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnApplyFilters = new System.Windows.Forms.Button();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.chbHumidity = new System.Windows.Forms.CheckBox();
+            this.chbPrecipitation = new System.Windows.Forms.CheckBox();
+            this.chbMinTemp = new System.Windows.Forms.CheckBox();
+            this.chbMaxTemp = new System.Windows.Forms.CheckBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnPrint = new System.Windows.Forms.Button();
@@ -48,13 +55,6 @@
             this.chbCapeTown = new System.Windows.Forms.CheckBox();
             this.printPreview = new System.Windows.Forms.PrintPreviewDialog();
             this.printDoc = new System.Drawing.Printing.PrintDocument();
-            this.btnApplyFilters = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.chbHumidity = new System.Windows.Forms.CheckBox();
-            this.chbPrecipitation = new System.Windows.Forms.CheckBox();
-            this.chbMinTemp = new System.Windows.Forms.CheckBox();
-            this.chbMaxTemp = new System.Windows.Forms.CheckBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
@@ -98,6 +98,84 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(307, 870);
             this.panel1.TabIndex = 7;
+            // 
+            // btnApplyFilters
+            // 
+            this.btnApplyFilters.Location = new System.Drawing.Point(7, 644);
+            this.btnApplyFilters.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnApplyFilters.Name = "btnApplyFilters";
+            this.btnApplyFilters.Size = new System.Drawing.Size(116, 25);
+            this.btnApplyFilters.TabIndex = 21;
+            this.btnApplyFilters.Text = "Apply Filters";
+            this.btnApplyFilters.UseVisualStyleBackColor = true;
+            this.btnApplyFilters.Click += new System.EventHandler(this.btnApplyFilters_Click);
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(10, 612);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(173, 21);
+            this.checkBox1.TabIndex = 20;
+            this.checkBox1.Text = "Strongest Windspeeds";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // chbHumidity
+            // 
+            this.chbHumidity.AutoSize = true;
+            this.chbHumidity.Location = new System.Drawing.Point(10, 585);
+            this.chbHumidity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.chbHumidity.Name = "chbHumidity";
+            this.chbHumidity.Size = new System.Drawing.Size(136, 21);
+            this.chbHumidity.TabIndex = 19;
+            this.chbHumidity.Text = "Highest Humidity";
+            this.chbHumidity.UseVisualStyleBackColor = true;
+            // 
+            // chbPrecipitation
+            // 
+            this.chbPrecipitation.AutoSize = true;
+            this.chbPrecipitation.Location = new System.Drawing.Point(10, 558);
+            this.chbPrecipitation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.chbPrecipitation.Name = "chbPrecipitation";
+            this.chbPrecipitation.Size = new System.Drawing.Size(212, 21);
+            this.chbPrecipitation.TabIndex = 18;
+            this.chbPrecipitation.Text = "Highest Precipitation Chance";
+            this.chbPrecipitation.UseVisualStyleBackColor = true;
+            // 
+            // chbMinTemp
+            // 
+            this.chbMinTemp.AutoSize = true;
+            this.chbMinTemp.Location = new System.Drawing.Point(10, 531);
+            this.chbMinTemp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.chbMinTemp.Name = "chbMinTemp";
+            this.chbMinTemp.Size = new System.Drawing.Size(160, 21);
+            this.chbMinTemp.TabIndex = 17;
+            this.chbMinTemp.Text = "Lowest Temperature";
+            this.chbMinTemp.UseVisualStyleBackColor = true;
+            // 
+            // chbMaxTemp
+            // 
+            this.chbMaxTemp.AutoSize = true;
+            this.chbMaxTemp.Location = new System.Drawing.Point(10, 504);
+            this.chbMaxTemp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.chbMaxTemp.Name = "chbMaxTemp";
+            this.chbMaxTemp.Size = new System.Drawing.Size(164, 21);
+            this.chbMaxTemp.TabIndex = 16;
+            this.chbMaxTemp.Text = "Highest Temperature";
+            this.chbMaxTemp.UseVisualStyleBackColor = true;
+            // 
+            // label5
+            // 
+            this.label5.BackColor = System.Drawing.Color.Silver;
+            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label5.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(-2, 477);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(309, 25);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "Select Conditions Filter";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
             // 
@@ -271,84 +349,6 @@
             this.printPreview.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreview.Icon")));
             this.printPreview.Name = "printPreview";
             this.printPreview.Visible = false;
-            // 
-            // btnApplyFilters
-            // 
-            this.btnApplyFilters.Location = new System.Drawing.Point(7, 644);
-            this.btnApplyFilters.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnApplyFilters.Name = "btnApplyFilters";
-            this.btnApplyFilters.Size = new System.Drawing.Size(116, 25);
-            this.btnApplyFilters.TabIndex = 21;
-            this.btnApplyFilters.Text = "Apply Filters";
-            this.btnApplyFilters.UseVisualStyleBackColor = true;
-            this.btnApplyFilters.Click += new System.EventHandler(this.btnApplyFilters_Click);
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(10, 612);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(173, 21);
-            this.checkBox1.TabIndex = 20;
-            this.checkBox1.Text = "Strongest Windspeeds";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // chbHumidity
-            // 
-            this.chbHumidity.AutoSize = true;
-            this.chbHumidity.Location = new System.Drawing.Point(10, 585);
-            this.chbHumidity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.chbHumidity.Name = "chbHumidity";
-            this.chbHumidity.Size = new System.Drawing.Size(136, 21);
-            this.chbHumidity.TabIndex = 19;
-            this.chbHumidity.Text = "Highest Humidity";
-            this.chbHumidity.UseVisualStyleBackColor = true;
-            // 
-            // chbPrecipitation
-            // 
-            this.chbPrecipitation.AutoSize = true;
-            this.chbPrecipitation.Location = new System.Drawing.Point(10, 558);
-            this.chbPrecipitation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.chbPrecipitation.Name = "chbPrecipitation";
-            this.chbPrecipitation.Size = new System.Drawing.Size(212, 21);
-            this.chbPrecipitation.TabIndex = 18;
-            this.chbPrecipitation.Text = "Highest Precipitation Chance";
-            this.chbPrecipitation.UseVisualStyleBackColor = true;
-            // 
-            // chbMinTemp
-            // 
-            this.chbMinTemp.AutoSize = true;
-            this.chbMinTemp.Location = new System.Drawing.Point(10, 531);
-            this.chbMinTemp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.chbMinTemp.Name = "chbMinTemp";
-            this.chbMinTemp.Size = new System.Drawing.Size(160, 21);
-            this.chbMinTemp.TabIndex = 17;
-            this.chbMinTemp.Text = "Lowest Temperature";
-            this.chbMinTemp.UseVisualStyleBackColor = true;
-            // 
-            // chbMaxTemp
-            // 
-            this.chbMaxTemp.AutoSize = true;
-            this.chbMaxTemp.Location = new System.Drawing.Point(10, 504);
-            this.chbMaxTemp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.chbMaxTemp.Name = "chbMaxTemp";
-            this.chbMaxTemp.Size = new System.Drawing.Size(164, 21);
-            this.chbMaxTemp.TabIndex = 16;
-            this.chbMaxTemp.Text = "Highest Temperature";
-            this.chbMaxTemp.UseVisualStyleBackColor = true;
-            // 
-            // label5
-            // 
-            this.label5.BackColor = System.Drawing.Color.Silver;
-            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label5.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(-2, 477);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(309, 25);
-            this.label5.TabIndex = 15;
-            this.label5.Text = "Select Conditions Filter";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // AnalyseWeatherView
             // 
