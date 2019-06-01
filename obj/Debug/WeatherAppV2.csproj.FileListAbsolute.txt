@@ -119,9 +119,6 @@ C:\Users\sddri\Desktop\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\Weather
 C:\Users\sddri\Desktop\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\bin\Debug\System.Data.SQLite.xml
 C:\Users\sddri\Desktop\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\bin\Debug\System.Data.SQLite.dll.config
 C:\Users\sddri\Desktop\PROG2A_Task3_SeandenDrijver_18001299\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.csproj.CopyComplete
-C:\Users\sddri\OneDrive\Documents\Varsity College\Second Year - 2019\PROG\POE 3\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.csprojAssemblyReference.cache
-C:\Users\sddri\OneDrive\Documents\Varsity College\Second Year - 2019\PROG\POE 3\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.AdminForecastView.resources
-C:\Users\sddri\OneDrive\Documents\Varsity College\Second Year - 2019\PROG\POE 3\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.Administrator.resources
 C:\Users\sddri\OneDrive\Documents\Varsity College\Second Year - 2019\PROG\POE 3\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.analyseTownGrid.resources
 C:\Users\sddri\OneDrive\Documents\Varsity College\Second Year - 2019\PROG\POE 3\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.frmLogin.resources
 C:\Users\sddri\OneDrive\Documents\Varsity College\Second Year - 2019\PROG\POE 3\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.frmMain.resources
@@ -144,3 +141,4 @@ C:\Users\sddri\OneDrive\Documents\Varsity College\Second Year - 2019\PROG\POE 3\
 C:\Users\sddri\OneDrive\Documents\Varsity College\Second Year - 2019\PROG\POE 3\WeatherAppV2\WeatherAppV2\bin\Debug\System.Data.SQLite.xml
 C:\Users\sddri\OneDrive\Documents\Varsity College\Second Year - 2019\PROG\POE 3\WeatherAppV2\WeatherAppV2\bin\Debug\System.Data.SQLite.dll.config
 C:\Users\sddri\OneDrive\Documents\Varsity College\Second Year - 2019\PROG\POE 3\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.csproj.CopyComplete
+C:\Users\sddri\OneDrive\Documents\Varsity College\Second Year - 2019\PROG\POE 3\WeatherAppV2\WeatherAppV2\obj\Debug\WeatherAppV2.csprojAssemblyReference.cache

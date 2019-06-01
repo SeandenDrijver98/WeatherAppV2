@@ -1,11 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WeatherAppV2//WeatherForecaster_SeanDenDrijver.Pages
@@ -16,15 +11,25 @@ namespace WeatherAppV2//WeatherForecaster_SeanDenDrijver.Pages
         public analyseTownGrid(String Town)
         {
             InitializeComponent();
-            townForecastBinding.Clear();
-            lblTown.Text = Town;           
-       
+            lblTown.Text = Town;
+
+            gridWeather.Rows.Add();
+
+
         }
 
         // Add a record to the data grid
-        public void addRecord(ForecastModel forecast)
+        public void addRecord(String[] forecast)
         {
-            townForecastBinding.Add(forecast);
+            gridWeather.Rows.Add();
+            gridWeather.Rows[currentRow].Cells[0].Value = forecast[1];
+            gridWeather.Rows[currentRow].Cells[1].Value = forecast[2];
+            gridWeather.Rows[currentRow].Cells[2].Value = forecast[3];
+            gridWeather.Rows[currentRow].Cells[3].Value = forecast[4];
+            gridWeather.Rows[currentRow].Cells[4].Value = forecast[5];
+            gridWeather.Rows[currentRow].Cells[5].Value = forecast[6];
+            gridWeather.Rows[currentRow].Cells[6].Value = forecast[7];
+            currentRow++;
         }
 
         // Apply filters to records
@@ -32,24 +37,25 @@ namespace WeatherAppV2//WeatherForecaster_SeanDenDrijver.Pages
         {
             //bool flagFound;
             List<String> rowContent = new List<String>();
-            try {
-                for (int row = 0; row < gridWeather.RowCount-1; row++)
+            try
+            {
+                for (int row = 0; row < gridWeather.RowCount - 1; row++)
                 {
                     //Check that the condition selected matches & date selected & & value selected
-                    if (gridWeather.Rows[row].Cells[condition-1].Value.ToString() == forecast[condition] && value+ "" == gridWeather.Rows[row].Cells[condition - 1].Value.ToString() && gridWeather.Rows[row].Cells[0].Value.ToString() == forecast[1])
+                    if (gridWeather.Rows[row].Cells[condition - 1].Value.ToString() == forecast[condition] && value + "" == gridWeather.Rows[row].Cells[condition - 1].Value.ToString() && gridWeather.Rows[row].Cells[0].Value.ToString() == forecast[1])
                     {
-                        gridWeather.Rows[row].Cells[condition-1].Style.BackColor = Color.Gold;
+                        gridWeather.Rows[row].Cells[condition - 1].Style.BackColor = Color.Gold;
 
                     }
                 }
-             
+
             }
             catch (Exception)
             {
                 Console.WriteLine("Something went wrong..");
-              
+
             }
-            
+
         }
 
         //Clear all filters
@@ -70,7 +76,6 @@ namespace WeatherAppV2//WeatherForecaster_SeanDenDrijver.Pages
         public void clearRecords()
         {
             townForecastBinding.Clear();
-
         }
 
         private void gridWeather_CellContentClick(object sender, DataGridViewCellEventArgs e)

@@ -59,13 +59,13 @@ namespace WeatherAppV2
 
 
 
-            foreach (var forecast in WeatherDbDataAccess.getWeatherRange(searchForecast))
+            foreach (var forecast in WeatherDbDataAccess.toArray(WeatherDbDataAccess.getWeatherRange(searchForecast)))
             {
                 // Check if city is selected 
-                if (Cities.Contains(forecast.city))
+                if (Cities.Contains(forecast[0]))
                 {
                     // Add Records to specicific 
-                    switch (forecast.city)
+                    switch (forecast[0])
                     {
                         case "Cape Town":
                             CapeTown.addRecord(forecast);
@@ -114,6 +114,7 @@ namespace WeatherAppV2
             }
 
         }
+
 
         //Store all Active cities into a list
         public List<String> populateSelectedCities()
@@ -196,100 +197,60 @@ namespace WeatherAppV2
             Pretoria.clearFilters();
             Durban.clearFilters();
 
-            List<ForecastModel> dailyForecasts = new List<ForecastModel>();
-            List<String[]> Attributes = new List<string[]>();
+            List<String[]> dailyForecasts = new List<String[]>();
             DateTime selectedDate = searchRange.Start.Date;
+            int intSelectDate = selectedDate.Day;
             ForecastModel searchForecast = new ForecastModel
             {
                 date = searchRange.Start,
                 endDate = searchRange.End
             };
-            
+
             try
             {
                 // for each day in the reange
                 for (int i = 0; i <= (searchRange.End.Subtract(searchRange.Start)).Days; i++)
                 {
                     //Loop through date range days
-                    foreach (var forecast in WeatherDbDataAccess.getWeatherRange(searchForecast))
+                    foreach (var forecast in WeatherDbDataAccess.toArray(WeatherDbDataAccess.getWeatherRange(searchForecast)))
                     {
-                        Attributes.Add(mapModelToArray(forecast));
                         //for each day loop through array of forecasts
-                        if (forecast.endDate == searchRange.Start.AddDays(i))    
+                        if (DateTime.Parse(forecast[1]) == searchRange.Start.AddDays(i))  //if (intSelectDate == DateTime.Parse(arrForecasts[forecastIndex, 1]).Day)   
                         {
                             dailyForecasts.Add(forecast);
                         }
                     }
-                        //compare all filters for this day
-                        //--------------------------------
-                        List<String> ActiveFilters = populateSelectedFilters();
-                    
-                        foreach (var filter in ActiveFilters)
-                        {
-                        switch (filter)
-                            {
-                                case "MaxTemp":
-                                    int maxValue = 100;
-                                    foreach (var forecast in dailyForecasts)
-                                    {
-                                        if (forecast.max_temp <= maxValue)
-                                        {
-                                            maxValue = forecast.max_temp;
-                                        }
-                                    }
-                                    MapForecastToTable(dailyForecasts, 4, maxValue);
-                                break;
-                                case "MinTemp":
-                                    int minValue = 0;
-                                    foreach (var forecast in dailyForecasts)
-                                    {
-                                        if (forecast.min_temp >= minValue)
-                                        {
-                                            minValue = forecast.min_temp;
-                                        }
-                                    }
-                                    MapForecastToTable(dailyForecasts, 5, minValue);
-                                break;
-                                case "Precipitation":
-                                    int precipitationValue = 100;
-                                    foreach (var forecast in dailyForecasts)
-                                    {
-                                        if (forecast.precipitation <= precipitationValue)
-                                        {
-                                            precipitationValue = forecast.precipitation;
-                                        }
-                                    }
-                                    MapForecastToTable(dailyForecasts, 3, precipitationValue);
-                                break;
-                                case "Windspeed":
-                                int WindspeedValue = 100;
-                                foreach (var forecast in dailyForecasts)
-                                {
-                                    if (forecast.precipitation <= WindspeedValue)
-                                    {
-                                        precipitationValue = forecast.windspeed;
-                                    }
-                                }
-                                MapForecastToTable(dailyForecasts, 6, WindspeedValue);
-                                break;
-                                case "Humidity":
-                                int HumidityValue = 100;
-                                foreach (var forecast in dailyForecasts)
-                                {
-                                    if (forecast.precipitation <= HumidityValue)
-                                    {
-                                        HumidityValue = forecast.humidity;
-                                    }
-                                }
-                                MapForecastToTable(dailyForecasts, 7, HumidityValue);
-                                break;
-                                default:
-                                    break;
-                            }
-                        }
+                    //compare all filters for this day
+                    //--------------------------------
+                    List<String> ActiveFilters = populateSelectedFilters();
 
-                        dailyForecasts.Clear();
-                    
+                    foreach (var filter in ActiveFilters)
+                    {
+                        switch (filter)
+                        {
+                            // check out this code
+                            case "MaxTemp":
+                                compareFilters(4, dailyForecasts);
+                                break;
+                            case "MinTemp":
+                                compareFilters(5, dailyForecasts);
+                                break;
+                            case "Precipitation":
+                                compareFilters(3, dailyForecasts);
+                                break;
+                            case "Windspeed":
+                                compareFilters(6, dailyForecasts);
+                                break;
+                            case "Humidity":
+                                compareFilters(7, dailyForecasts);
+                                break;
+                            default:
+                                break;
+                        }
+                    }
+
+                    dailyForecasts.Clear();
+
                 }
 
             }
@@ -298,43 +259,73 @@ namespace WeatherAppV2
                 Console.WriteLine("Analysis Encountered an error");
             }
 
-           
+        }
+
+        //method to compare daily filter
+        public void compareFilters(int conditionIndex, List<String[]> dailyForecasts)
+        {
+            int value = 0;
+            // Check if not min set 
+            if (conditionIndex != 5)
+            {
+                foreach (var forecast in dailyForecasts)
+                {
+                    if (int.Parse(forecast[conditionIndex]) >= value)
+                    {
+                        value = int.Parse(forecast[conditionIndex]);
+                    }
+                }
+            }
+            else
+            {
+                value = 100;
+                foreach (var forecast in dailyForecasts)
+                {
+                    if (int.Parse(forecast[conditionIndex]) <= value)
+                    {
+                        value = int.Parse(forecast[conditionIndex]);
+                    }
+                }
+            }
+
+            //Map to tables
+            MapForecastToTable(dailyForecasts, conditionIndex, value);
+
 
         }
-             
 
-        public void MapForecastToTable(List<ForecastModel> dayForecasts, int condition, int value)
+
+        public void MapForecastToTable(List<String[]> dayForecasts, int condition, int value)
         {
             int i = 0;
             //Foreach identical value
             foreach (var forecast in dayForecasts)
             {
-                String[] arrForecast = WeatherDbDataAccess.toArray(forecast);
-                if (int.Parse(arrForecast[condition]) == value)
+                if (int.Parse(forecast[condition]) == value)
                 {
                     //Find the city
-                    switch (arrForecast[0])
+                    switch (forecast[0])
                     {
                         case "Cape Town":
-                            CapeTown.applyFilter(condition, arrForecast, value);
+                            CapeTown.applyFilter(condition, forecast, value);
                             break;
                         case "Johannesburg":
-                            Johannesburg.applyFilter(condition, arrForecast, value);
+                            Johannesburg.applyFilter(condition, forecast, value);
                             break;
                         case "Durban":
-                            Durban.applyFilter(condition, arrForecast, value);
+                            Durban.applyFilter(condition, forecast, value);
                             break;
                         case "Pretoria":
-                            Pretoria.applyFilter(condition, arrForecast, value);
+                            Pretoria.applyFilter(condition, forecast, value);
                             break;
                         case "Port Elizabeth":
-                            PortElizabeth.applyFilter(condition, arrForecast, value);
+                            PortElizabeth.applyFilter(condition, forecast, value);
                             break;
                         default:
                             break;
                     }
                 }
-               
+
             }
         }
 

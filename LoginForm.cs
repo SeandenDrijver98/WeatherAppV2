@@ -67,15 +67,8 @@ namespace WeatherAppV2
             Console.WriteLine("Auth Users: ", AuthorizedUsers.Count);
             if (AuthorizedUsers.Count == 1)
             {
-                Console.WriteLine(AuthorizedUsers.ElementAt(0).email);
                 accessToken = AuthorizedUsers.ElementAt(0).permissions;
                 MessageBox.Show("Login Successful");
-                if(accessToken == "Superuser")
-                {
-                    this.Hide();
-                    Administrator admin = new Administrator();
-                    admin.Show();
-                }
                 this.Hide();
                 frmMain main = new frmMain(accessToken);
                 main.Show();

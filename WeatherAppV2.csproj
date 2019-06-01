@@ -70,18 +70,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdminForecastView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="AdminForecastView.Designer.cs">
-      <DependentUpon>AdminForecastView.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Administrator.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Administrator.Designer.cs">
-      <DependentUpon>Administrator.cs</DependentUpon>
-    </Compile>
     <Compile Include="analyseTownGrid.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -129,12 +117,6 @@
     <Compile Include="WeeklyDayView.Designer.cs">
       <DependentUpon>WeeklyDayView.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AdminForecastView.resx">
-      <DependentUpon>AdminForecastView.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Administrator.resx">
-      <DependentUpon>Administrator.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="analyseTownGrid.resx">
       <DependentUpon>analyseTownGrid.cs</DependentUpon>
     </EmbeddedResource>

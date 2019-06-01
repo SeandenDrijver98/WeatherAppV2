@@ -102,10 +102,16 @@ namespace WeatherAppV2
             }
         }
 
-        public static string[] toArray(ForecastModel model)
+        public static List<string[]> toArray(List<ForecastModel> models)
+            {
+            List<string[]> arrayList = new List<string[]>();
+            foreach (var model in models)
             {
                 string[] forecastArr = { model.city, model.date + "", model.condition, model.precipitation + "", model.max_temp + "", model.min_temp + "", model.windspeed + "", model.humidity + "" };
-                return forecastArr;
+                arrayList.Add(forecastArr);
+            }
+            return arrayList;
+                
             }
 
         public static void deleteRecord(ForecastModel forecast)
